@@ -1,0 +1,283 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  background: linear-gradient(135deg, #ff9a9e 0%, #fad0c4 50%, #fbc2eb 100%);
+  min-height: 100vh;
+  padding-top: 160px; /* חשוב כדי לא להסתיר תוכן מתחת ל-header */
+}
+
+/* Sticky Header */
+.sticky-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: linear-gradient(to right, #ff9966, #ff5e62);
+  color: white;
+  z-index: 1000;
+  padding: 15px 30px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.header-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+
+.profile-pic {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  border: 3px solid white;
+  object-fit: cover;
+}
+
+/* Container */
+.container {
+  max-width: 800px;
+  background-color: #fff;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  margin: 30px auto;
+  padding: 30px 20px;
+}
+
+/* Sections */
+.section {
+  margin-bottom: 30px;
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: #ff5e62;
+  border-bottom: 2px solid #ffe0b2;
+  padding-bottom: 5px;
+}
+
+.subtitle {
+  font-size: 1rem;
+  margin-top: 5px;
+  font-weight: 300;
+}
+
+ul {
+  list-style: circle inside;
+  margin-top: 10px;
+}
+
+li {
+  margin: 10px 0;
+}
+
+p {
+  margin-bottom: 20px; 
+}
+
+
+a {
+  color: #ff5e62;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+a:hover {
+  color: #ff9966;
+}
+
+
+footer {
+  text-align: center;
+  background-color: #ff9966;
+  color: white;
+  padding: 10px;
+  font-size: 0.9rem;
+  margin-top: 30px;
+}
+
+hr { 
+  border: dotted #ff9966 6px; 
+  width: 4%; 
+  margin: 100px auto;
+} 
+
+
+/* ברירת המחדל עבור מסכים גדולים */
+body {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+/* מסכים קטנים (עד 768px) */
+@media (max-width: 768px) {
+  body {
+    font-size: 14px;
+  }
+  .header-content {
+    flex-direction: column;
+    align-items: center;
+  }
+  .profile-pic {
+    width: 70px;
+    height: 70px;
+  }
+}
+
+/* מסכים קטנים מאוד (עד 480px) */
+@media (max-width: 480px) {
+  .container {
+    padding: 10px;
+  }
+}
+
+/* Flexbox עבור המיין קונטיינר */
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.section {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 30px;
+  gap: 10px;
+}
+
+
+ul {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+
+
+/* Responsive */
+@media (max-width: 600px) {
+  .header-content {
+    flex-direction: column;
+  }
+
+  .profile-pic {
+    width: 70px;
+    height: 70px;
+  }
+
+  h1 {
+    font-size: 1.8rem;
+  }
+}
+
+
+/* Animation */
+@keyframes fadeSlide {
+  0% {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInContent {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.container {
+  animation: fadeInContent 1s ease-out;
+}
+
+
+.sticky-header {
+
+  animation: fadeSlide 1s ease-out;
+}
+
+form input,
+form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 1rem;
+  background-color: #f8f8f8;
+}
+
+form input:focus,
+form textarea:focus {
+  border-color: #ff5e62;
+  background-color: #fff;
+}
+
+form button {
+  background-color: #ff5e62;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: #ff9966;
+}
+
+a.button-link {
+  display: inline-block;
+  padding: 12px 25px;
+  background-color:  #ff9966;
+  color: white;
+  border-radius: 8px;
+  text-align: center;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+a.button-link:hover {
+  background-color: #ff9966;
+}
+
+.hobbies-list {
+  list-style: none; 
+  padding-left: 0;
+}
+
+.hobbies-list li {
+  display: flex;
+  align-items: center;
+  margin: 12px 0;
+}
+
+.hobbies-list .icon {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 12px;
+  border: 2px solid #f66f72;
+}
+
