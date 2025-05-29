@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TeachMe | Home</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Raleway&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+
+  <header>
+    <div class="logo">
+      <img src="images/justlogo.png" alt="TeachMe logo" class="logo-img">
+      <span class="logo-text">TeachMe</span>
+    </div>
+    <nav class="main-nav">
+      <ul>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="search.html">Search</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="login.html" id="login-link">Login</a></li>
+        <li><a href="profile.html" id="profile-link" style="display:none;">My Profile</a></li>
+        <li><button id="logoutBtn" style="display: none;">Logout</button></li>
+        <li><span id="welcome-text" style="display:none; margin-left:10px; font-weight:bold;"></span></li>
+
+      </ul>
+    </nav>
+    <div class="hamburger" id="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-content">
+        <h1>Find or become a private tutor</h1>
+        <h2 class="hero-subheading">Fast, easy, and trusted</h2>
+        <div class="cta-buttons">
+          <a href="signup-tutor.html" class="btn">Join as a Tutor</a>
+          <a href="signup-student.html" class="btn btn-secondary">Join as a Student</a>
+          <p class="hero-subtext">Connecting students and tutors on one platform.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="about-us">
+      <h2>About Us</h2>
+      <p class="about-text">
+        TeachMe is a smart and accessible platform that connects students with fellow students who offer private
+        tutoring services.
+        <br> Whether you need help preparing for an exam, catching up on a course, or mastering a new skill – our
+        mission is to make private learning simple, affordable, and trustworthy.
+        <br> We believe in peer-to-peer education, where everyone can be both a learner and a teacher.
+      </p>
+
+      <section class="features-grid">
+        <div class="feature-box">
+          <img src="images/home/tutor.png" alt="Tutors icon">
+          <h3>Tutors</h3>
+          <p>Explore qualified student tutors in various subjects.</p>
+        </div>
+        <div class="feature-box">
+          <img src="images/home/calendar.png" alt="Scheduling icon">
+          <h3>Scheduling</h3>
+          <p>Book sessions at your convenience.</p>
+        </div>
+        <div class="feature-box">
+          <img src="images/home/reviews.png" alt="Reviews icon">
+          <h3>Reviews</h3>
+          <p>Read feedback from other students.</p>
+        </div>
+      </section>
+  </main>
+
+  <footer>
+    <div class="footer-links">
+      <a href="terms.html">Terms of Use</a>
+      <a href="privacy.html">Privacy Policy</a>
+      <a href="support.html">Support</a>
+    </div>
+    <p>&copy; 2025 TeachMe. All rights reserved.</p>
+  </footer>
+  <script src="main.js"></script>
+  <script src="logout.js"></script>
+
+</body>
+</html>

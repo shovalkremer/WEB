@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - TeachMe</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Raleway:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+            <img src="images/justlogo.png" alt="TeachMe logo" class="logo-img">
+            <span class="logo-text">TeachMe</span>
+        </div>    
+        <nav class="main-nav">
+        <ul>
+            <li><a href="home.html">Home</a></li>
+          <li><a href="search.html">Search</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="login.html" id="login-link">Login</a></li>
+          <li><a href="profile.html" id="profile-link" style="display:none;">My Profile</a></li>
+          <li><button id="logoutBtn" style="display: none;">Logout</button></li>
+          <li><span id="welcome-text" style="display:none; margin-left:10px; font-weight:bold;"></span></li>
+
+
+            <li id="user-greeting" style="display: none;"></li>
+            <li id="logout-li" style="display: none;"><a href="#" id="logoutBtn">Logout</a></li>
+        </ul>
+        </nav>
+        <div class="hamburger" id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>  
+    </header>
+
+    <div class="banner">
+        <span class="banner-text">First lesson free! Sign up now and get your first session on us.</span>
+        <img src="images/icons/gift_icon.png" alt="Gift Icon" class="gift-icon" />
+
+      </div>
+      
+<!-- Search Filters -->
+<section class="search-filters">
+  <h2>Find a Tutor</h2>
+  <form id="searchForm">
+    <div class="form-group">
+      <label for="subject">Subject</label>
+      <input type="text" id="subject" name="subject" placeholder="e.g., Math, English" />
+    </div>
+    <div class="form-group">
+      <label for="location">Location</label>
+      <input type="text" id="location" name="location" placeholder="e.g., Tel Aviv" />
+    </div>
+    <div class="form-group">
+      <label for="price">Max Price (₪)</label>
+      <input type="number" id="price" name="price" min="0" />
+    </div>
+    <div class="form-group">
+      <label for="lessonType">Lesson Type</label>
+      <select id="lessonType" name="lessonType">
+        <option value="">Any</option>
+        <option value="online">Online</option>
+        <option value="in person">At the teacher's home</option>
+        <option value="hibride">At the student's home</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <label for="rating">Minimum Rating</label>
+      <select id="rating" name="rating">
+        <option value="">Any</option>
+        <option value="1">★ 1+</option>
+        <option value="2">★ 2+</option>
+        <option value="3">★ 3+</option>
+        <option value="4">★ 4+</option>
+        <option value="5">★ 5</option>
+      </select>
+    </div>
+    
+    <button type="submit" class="btn">Search</button>
+  </form>
+</section>
+
+<!-- Search Results -->
+<section class="results-section" id="resultsSection" style="display: none;">
+  <!-- Message for no results -->
+  <p id="noResultsMessage" class="no-results-message" style="display: none;">
+    No tutors found. Try adjusting your search filters or check back later!
+  </p>
+
+  <!-- Results container -->
+  <div id="resultsContainer">
+    <!-- Tutor cards will be injected here dynamically -->
+  </div>
+</section>
+
+  
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-links">
+      <a href="terms.html">Terms of Use</a>
+      <a href="privacy.html">Privacy Policy</a>
+      <a href="support.html">Support</a>
+    </div>
+    <p>&copy; 2025 TeachMe. All rights reserved.</p>
+  </footer>
+
+  <script src="search.js"></script>
+  <script src="logout.js"></script>
+
+
+</body>
+</html>

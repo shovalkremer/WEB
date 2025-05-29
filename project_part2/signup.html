@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sign Up</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Raleway&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="logo">
+        <img src="images/justlogo.png" alt="TeachMe logo" class="logo-img">
+        <span class="logo-text">TeachMe</span>
+    </div>    
+    <nav class="main-nav">
+    <ul>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="search.html">Search</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="login.html" id="login-link">Login</a></li>
+        <li><a href="profile.html" id="profile-link" style="display:none;">My Profile</a></li>
+        <li><button id="logoutBtn" style="display: none;">Logout</button></li>
+        <li><span id="welcome-text" style="display:none; margin-left:10px; font-weight:bold;"></span></li>
+
+        <p id="error-message" style="color: red;"></p>
+        <p id="successMessage" style="color: green; display: none;">Registration successful! 🎉</p>
+
+
+
+    </ul>
+    </nav>
+    <div class="hamburger" id="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>  
+</header>
+
+  <!-- Sign Up Options -->
+  <section class="hero" style="height: auto; padding: 100px 20px;">
+    <div class="hero-content">
+      <h1>Join TeachMe</h1>
+      <p class="hero-subtext">Sign up to start learning or teaching today</p>
+      <div style="display: flex; gap: 20px; flex-wrap: wrap; justify-content: center; margin-top: 30px;">
+        <a href="signup-tutor.html" class="btn">Sign Up as a Tutor</a>
+        <a href="signup-student.html" class="btn">Sign Up as a Student</a>
+      </div>
+    </div>
+    <div id="error-message" style="color: red; display: none;"></div>
+  
+  </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-links">
+            <a href="terms.html">Terms of Use</a>
+            <a href="privacy.html">Privacy Policy</a>
+            <a href="support.html">Support</a>        
+        </div>
+        <p>&copy; 2025 TeachMe. All rights reserved.</p>
+      </footer>
+      <script src="signup.js"></script>
+
+</body>
+</html>

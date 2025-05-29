@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up as Student</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Raleway&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <div class="logo">
+            <img src="images/justlogo.png" alt="TeachMe logo" class="logo-img">
+            <span class="logo-text">TeachMe</span>
+        </div>
+        <nav class="main-nav">
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="search.html">Search</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="login.html" id="login-link">Login</a></li>
+                <li><a href="profile.html" id="profile-link" style="display:none;">My Profile</a></li>
+                <li><button id="logoutBtn" style="display: none;">Logout</button></li>
+                <li><span id="welcome-text" style="display:none; margin-left:10px; font-weight:bold;"></span></li>
+
+            </ul>
+        </nav>
+        <div class="hamburger" id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </header>
+
+    <!-- Sign Up Student Section -->
+    <section class="login-form">
+        <h2>Sign Up as a Student</h2>
+        <form id="studentSignupForm">
+            <input type="hidden" name="userType" value="student">
+
+            <label for="firstName">First Name</label>
+            <input type="text" id="firstName" name="firstName" required>
+
+            <label for="lastName">Last Name</label>
+            <input type="text" id="lastName" name="lastName" required>
+
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" name="phone" required>
+
+            <label for="username">Username</label>
+            <input type="text" id="username" name="username" required>
+
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" required>
+
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" name="dob">
+
+
+            <label for="subjects">Subjects You're Interested In</label>
+            <div class="subjects-list">
+                <label><input type="checkbox" name="subjects[]" value="Math"> Math</label>
+                <label><input type="checkbox" name="subjects[]" value="English"> English</label>
+                <label><input type="checkbox" name="subjects[]" value="Science"> Science</label>
+                <label><input type="checkbox" name="subjects[]" value="History"> History</label>
+                <label><input type="checkbox" name="subjects[]" value="Computer Science"> Computer Science</label>
+            </div>
+            <div id="error-message" style="color: red; display: none;"></div>
+            <p id="error-message" style="color: red;"></p>
+            <p id="successMessage" style="color: green; display: none;">Registration successful! 🎉</p>
+
+
+            <button type="submit" class="btn">Sign Up</button>
+        </form>
+
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-links">
+            <a href="terms.html">Terms of Use</a>
+            <a href="privacy.html">Privacy Policy</a>
+            <a href="support.html">Support</a>
+        </div>
+        <p>&copy; 2025 TeachMe. All rights reserved.</p>
+    </footer>
+    <script src="signup-student.js"></script>
+
+</body>
+
+</html>

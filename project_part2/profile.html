@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>My Profile - TeachMe</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Header -->
+<header>
+  <div class="logo">
+    <img src="images/justlogo.png" alt="TeachMe logo" class="logo-img">
+    <span class="logo-text">TeachMe</span>
+  </div>    
+  <nav class="main-nav">
+    <ul>
+      <li><a href="home.html">Home</a></li>
+      <li><a href="search.html">Search</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="login.html" id="login-link">Login</a></li>
+      <li><button id="logoutBtn" style="display: none;">Logout</button></li>
+    </ul>
+  </nav>
+  <div class="hamburger" id="hamburger">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>  
+</header>
+
+<!-- Profile Section -->
+<section class="profile-page">
+  <h2>My Profile</h2>
+  <div class="profile-card">
+    <img id="profilePhoto" src="" alt="Profile photo" class="profile-img" />
+    <div class="profile-info">
+      <p><strong>Full Name:</strong> <span id="fullName"></span></p>
+      <p><strong>Email:</strong> <span id="email"></span></p>
+      <p><strong>Username:</strong> <span id="username"></span></p>
+      <p><strong>Phone:</strong> <span id="phone"></span></p>
+      <p><strong>Subjects:</strong> <span id="subjects"></span></p>
+      <p><strong>Method:</strong> <span id="method"></span></p>
+      <p><strong>Price per hour:</strong> ₪<span id="price"></span></p>
+      <p><strong>Area:</strong> <span id="area"></span></p>
+      <p><strong>Background:</strong> <span id="background"></span></p>
+      <p><strong>Bio:</strong> <span id="bio"></span></p>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer>
+  <div class="footer-links">
+    <a href="terms.html">Terms of Use</a>
+    <a href="privacy.html">Privacy Policy</a>
+    <a href="support.html">Support</a>        
+  </div>
+  <p>&copy; 2025 TeachMe. All rights reserved.</p>
+</footer>
+
+<!-- Scripts -->
+<script src="script.js"></script>
+<script src="logout.js"></script> 
+<script src="profile.js"></script>
+
+
+</body>
+</html>

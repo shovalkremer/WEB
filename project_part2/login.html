@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Login - TeachMe</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Raleway:wght@400;500&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="logo">
+      <img src="images/justlogo.png" alt="TeachMe logo" class="logo-img" />
+      <span class="logo-text">TeachMe</span>
+    </div>
+    <nav class="main-nav">
+      <ul>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="search.html">Search</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="login.html" id="login-link">Login</a></li>
+        <li><a href="profile.html" id="profile-link" style="display:none;">My Profile</a></li>
+        <li><button id="logoutBtn" style="display: none;">Logout</button></li>
+        <li><span id="welcome-text" style="display:none; margin-left:10px; font-weight:bold;"></span></li>
+
+      </ul>
+    </nav>
+    
+    <div class="hamburger" id="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </header>
+
+  <!-- Login Form Section -->
+  <section class="login-form">
+    <h2>Login to Your Account</h2>
+    <form id="loginForm">
+      <label for="loginEmail">Email Address</label>
+      <input type="email" id="loginEmail" name="email" required placeholder="example@email.com" />
+
+      <label for="loginPassword">Password</label>
+      <input type="password" id="loginPassword" name="password" required />
+
+      <div class="forgot-password">
+        <a href="forgotpassword.html">Forgot your password?</a>
+      </div>
+
+      <button type="submit" class="btn">Login</button>
+
+      <div class="signup-link" style="margin-top: 10px;">
+        <p>Don't have an account? <a href="signup.html">Sign up</a></p>
+      </div>
+      <div id="error-message" style="color: red; display: none;"></div>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-links">
+      <a href="terms.html">Terms of Use</a>
+      <a href="privacy.html">Privacy Policy</a>
+      <a href="support.html">Support</a>
+    </div>
+    <p>&copy; 2025 TeachMe. All rights reserved.</p>
+  </footer>
+  <script src="login.js"></script>
+
+
+</body>
+</html>

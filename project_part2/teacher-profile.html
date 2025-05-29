@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Tutor Profile - TeachMe</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Raleway&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="logo">
+      <img src="images/justlogo.png" alt="TeachMe logo" class="logo-img">
+      <span class="logo-text">TeachMe</span>
+    </div>
+    <nav class="main-nav">
+      <ul>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="search.html">Search</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="login.html" id="login-link">Login</a></li>
+        <li><a href="profile.html" id="profile-link" style="display:none;">My Profile</a></li>
+        <li><button id="logoutBtn" style="display: none;">Logout</button></li>
+        <li><span id="welcome-text" style="display:none; margin-left:10px; font-weight:bold;"></span></li>
+
+      </ul>
+    </nav>
+    <div class="hamburger" id="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>  
+  </header>
+
+  <!-- Tutor Profile -->
+  <section class="tutor-profile">
+    <div class="profile-card">
+      <img id="tutorImage" src="images/profile-placeholder.png" alt="Tutor Photo" class="profile-img">
+        <div class="profile-details">
+          <h2 id="tutorName"></h2>
+          <div id="contactInfo" class="contact-info">
+          <p><strong>📞 Contact the tutor:</strong> <span id="tutorPhone"></span></p>
+        </div>
+        <p><strong>Subjects:</strong> <span id="tutorSubject"></span></p>
+        <p><strong>Hourly Rate:</strong> ₪<span id="tutorRate"></span></p>
+        <p><strong>Format:</strong> <span id="tutorFormat"></span></p>
+        <p><strong>Location:</strong> <span id="tutorLocation"></span></p>
+      </div>
+    </div>
+
+    <div class="bio-experience-section">
+      <h3>About Me</h3>
+      <p id="tutorBio"></p>
+
+      <h3>Experience</h3>
+      <p id="tutorExperience"></p>
+    </div>
+
+    <div class="availability-section">
+      <h3>Weekly Availability</h3>
+      <p id="tutorAvailability"></p>
+    </div>
+
+    <div class="lesson-slots-section">
+      <h3>Available Lesson Slots</h3>
+      <div id="lessonSlots">
+        <!-- Example:
+        <div class="lesson-slot">
+          <span class="slot-date">May 12, 14:00</span>
+          <span class="slot-type">Online</span>
+          <span class="slot-price">₪80</span>
+          <button class="book-btn">Book Lesson</button>
+        </div>
+        -->
+      </div>
+    </div>
+
+    <div class="reviews-section">
+      <h3>Student Reviews</h3>
+      <div id="tutorReviews">
+        <!-- Example:
+        <div class="review">
+          <div class="review-header">
+            <span class="review-stars">★★★★★</span>
+            <span class="review-name">Daniel, Apr 2</span>
+          </div>
+          <p>"Amazing lesson! Super helpful."</p>
+        </div>
+        -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-links">
+      <a href="terms.html">Terms of Use</a>
+      <a href="privacy.html">Privacy Policy</a>
+      <a href="support.html">Support</a>        
+    </div>
+    <p>&copy; 2025 TeachMe. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+  <script src="main.js"></script>
+  <script src="logout.js"></script>
+  <script src="tutorProfile.js"></script>
+
+</body>
+</html>
